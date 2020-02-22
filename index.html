@@ -92,7 +92,7 @@
               </p>
               <p>Welcome to my academic website. You are probably here to see <a href="nomsy.html">pictures of my dog</a>. Otherwise, read on.
               </p>
-              <p>I am a first year computer science PhD student at MIT. I am advised by Leslie Kaelbling and Josh Tenenbaum and am a member of the <a href="http://lis.csail.mit.edu/">Learning and Intelligent Systems group</a> and the <a href="http://cocosci.mit.edu/">Computational Cognitive Science group</a>. I am grateful for support from an NSF Graduate Research Fellowship and an MIT Presidential Fellowship. Previously I was a researcher at <a href="https://www.vicarious.com/">Vicarious AI</a>. I received my B.A. from Harvard in computer science and mathematics in 2016.
+              <p>I am a second year computer science PhD student at MIT. I am advised by Leslie Kaelbling and Josh Tenenbaum and am a member of the <a href="http://lis.csail.mit.edu/">Learning and Intelligent Systems group</a> and the <a href="http://cocosci.mit.edu/">Computational Cognitive Science group</a>. I am grateful for support from an NSF Graduate Research Fellowship and an MIT Presidential Fellowship. Previously I was a researcher at <a href="https://www.vicarious.com/">Vicarious AI</a>. I received my B.A. from Harvard in computer science and mathematics in 2016.
               </p>
               <p>Feel free to contact me at tslvr@mit.edu.
               </p>
@@ -107,7 +107,7 @@
             <td width="100%" valign="middle">
               <heading>Research</heading>
               <p>
-                I am interested in reinforcement learning and planning in low sample complexity regimes.
+                My research uses insights from program synthesis and inductive logic programming to improve sample efficiency and generalization in reinforcement learning and planning.
               </p>
             </td>
           </tr>
@@ -118,17 +118,93 @@
           <tr>
             <td width="25%">
               <div class="one">
+                <div class="two"><img src='images/PDDLGym_image.png' width="160" vspace="12"></div>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+            <a href="https://arxiv.org/abs/2002.06432">
+                <papertitle>PDDLGym: Gym environments from PDDL problems</papertitle>
+            </a>
+              <br>
+              <strong>Tom Silver</strong>, Rohan Chitnis
+              <br>
+              <em>arXiv</em>, 2020
+              <br>
+              [<a href="bib/pddlgym.bib">BibTeX</a>]
+              [<a href="https://arxiv.org/pdf/2002.06432.pdf">PDF</a>]
+              <br>
+              <p></p>
+              <p>We present PDDLGym, a framework that automatically constructs OpenAI Gym environments from PDDL domains and problems.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%">
+              <div class="one">
+                <div class="two"><img src='images/glib_image.png' width="160" vspace="0"></div>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+            <a href="https://arxiv.org/abs/2001.08299">
+                <papertitle>GLIB: Exploration via goal-literal babbling for lifted operator learning</papertitle>
+            </a>
+              <br>
+              Rohan Chitnis*, <strong>Tom Silver*</strong>, Josh Tenenbaum, Leslie Kaelbling, Tomas Lozano-Perez
+              <br>
+              <em>arXiv</em>, 2020
+              <br>
+              [<a href="bib/glib.bib">BibTeX</a>]
+              [<a href="https://arxiv.org/pdf/2001.08299.pdf">PDF</a>]
+              <br>
+              <p></p>
+              <p>We propose goal-literal babbling (GLIB), a simple and general method that addresses the problem of efficient exploration for learning lifted operators in sequential decision-making problems without extrinsic goals or rewards.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%">
+              <div class="one">
+                <div class="two"><img src='images/genplan20_image.png' width="160" vspace="24"></div>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+            <a href="papers/genplan20_camera_ready.pdf">
+                <papertitle>Learning skill hierarchies from predicate descriptions and self-supervision</papertitle>
+            </a>
+              <br>
+              <strong>Tom Silver*</strong>, Rohan Chitnis*, Anurag Ajay, Josh Tenenbaum, Leslie Kaelbling
+              <br>
+              <em>AAAI GenPlan Workshop</em>, 2020
+              <br>
+              [<a href="bib/genplan20.bib">BibTeX</a>]
+              [<a href="papers/genplan20_camera_ready.pdf">PDF</a>]
+              <br>
+              <p></p>
+              <p>We learn lifted, goal-conditioned policies and use STRIPS planning with learned operator descriptions to solve a large suite of unseen test tasks.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%">
+              <div class="one">
                 <div class="two"><img src='images/tactics_image.png' width="160"></div>
               </div>
             </td>
             <td valign="middle" width="75%">
-            <a href="papers/plp_arxiv_submission1.pdf">
-                <papertitle>Few-shot Bayesian imitation learning with policies as logic over programs</papertitle>
+            <a href="https://arxiv.org/abs/1904.06317">
+                <papertitle>Few-shot Bayesian imitation learning with logical program policies.</papertitle>
             </a>
               <br>
               <strong>Tom Silver</strong>, Kelsey Allen, Leslie Kaelbling, Josh Tenenbaum
               <br>
-              <em>ICLR <a href="http://spirl.info/">SPiRL Workshop</a></em>, 2019 and <em>RLDM</em>, 2019
+              <em>AAAI</em> 2020. Previous versions at <em>RLDM</em>, 2019 and 
+                ICLR <a href="http://spirl.info/">SPiRL Workshop</a></em>.
+              <br>
+              [<a href="bib/lpp.bib">BibTeX</a>]
+              [<a href="https://arxiv.org/pdf/1904.06317.pdf">PDF</a>]
+              [<a href="https://sites.google.com/view/plp-mit">Website</a>]
+              [<a href="https://github.com/tomsilver/policies_logic_programs">Code</a>]
+              [<a href="https://youtu.be/MJTPdEj2y_4">Video</a>]
               <br>
               <p></p>
               <p>We can learn policies from five or fewer demonstrations that generalize to dramatically different test task instances.</p>
@@ -150,8 +226,46 @@
               <br>
               <em>ICLR</em>, 2019
               <br>
+              [<a href="bib/iclr19.bib">BibTeX</a>]
+              [<a href="https://openreview.net/pdf?id=SJxsV2R5FQ">PDF</a>]
               <p></p>
               <p>We present a representation for describing transition models in complex uncertain domains using relational rules.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%">
+              <div class="one">
+                <div class="two"><img src='images/icml2019_image.png' width="160" vspace="1"></div>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <papertitle>Learning models for mode-based planning</papertitle>
+              <br>
+              Jo&atilde;o Loula, <strong>Tom Silver</strong>, Kelsey Allen, Josh Tenenbuam
+              <br>
+              <em>ICML <a href="https://sites.google.com/view/mbrl-icml2019/home?authuser=0">MBRL Workshop</a></em>, 2019
+              <br>
+              <p></p>
+              <p>We present a model that learns mode constraints from expert demonstrations. We show that it is data efficient, and that it learns interpretable representations that it can leverage to effectively plan in out-of-distribution environments.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%">
+              <div class="one">
+                <div class="two"><img src='images/cogsci2019_image.png' width="160" vspace="1"></div>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+              <papertitle>Discovering a symbolic planning language from continuous experience</papertitle>
+              <br>
+              Jo&atilde;o Loula, <strong>Tom Silver</strong>, Kelsey Allen, Josh Tenenbuam
+              <br>
+              <em>CogSci</em>, 2019
+              <br>
+              <p></p>
+              <p>We present a model that starts out with a language of low-level physical constraints and, by  observing expert demonstrations, builds up a library of high-level concepts that afford planning  and action understanding.</p>
             </td>
           </tr>
 
@@ -170,6 +284,8 @@
               <br>
               <em>arXiv</em>, 2018
               <br>
+              [<a href="bib/rpl.bib">BibTeX</a>]
+              [<a href="https://arxiv.org/pdf/1812.06298.pdf">PDF</a>]
               [<a href="https://k-r-allen.github.io/residual-policy-learning/">Website</a>]
               [<a href="https://github.com/k-r-allen/residual-policy-learning">Code</a>]
               [<a href="https://www.youtube.com/watch?v=TbALweu6Zpc">Video</a>]
@@ -194,6 +310,8 @@
               <br>
               <em>AAAI</em>, 2018
               <br>
+              [<a href="bib/smcs.bib">BibTeX</a>]
+              [<a href="https://www.vicarious.com/wp-content/uploads/2018/01/AAAI18-pixelworld.pdf">PDF</a>]
               [<a href="https://www.vicarious.com/2018/02/07/learning-concepts-through-sensorimotor-interactions/">Blog Post</a>]
               [<a href="https://github.com/vicariousinc/pixelworld">Code</a>]
               <br>
@@ -217,6 +335,8 @@
               <br>
               <em>ICML</em>, 2017
               <br>
+              [<a href="bib/schemanetworks.bib">BibTeX</a>]
+              [<a href="https://arxiv.org/pdf/1706.04317.pdf">PDF</a>]
               [<a href="https://www.vicarious.com/2017/08/07/general-game-playing-with-schema-networks/">Blog Post</a>] [<a href="https://www.youtube.com/watch?v=QHcAlAprFxA">Video</a>]
               [Press Coverage: 
                <a href="https://techcrunch.com/2017/07/25/vicarious-gets-another-50-million-to-expand-its-research-team-and-build-smarter-robots/">TechCrunch</a>, 
@@ -230,7 +350,7 @@
           <tr>
             <td width="25%">
               <div class="one">
-                <div class="two"><img src='images/luna_image.png' width="160" vspace="42"></div>
+                <div class="two"><img src='images/luna_image.png' width="160" vspace="50"></div>
               </div>
             </td>
             <td valign="middle" width="75%">
