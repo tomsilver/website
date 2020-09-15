@@ -92,7 +92,7 @@
               </p>
               <p>Welcome to my academic website. You are probably here to see <a href="nomsy.html">pictures of my dog</a>. Otherwise, read on.
               </p>
-              <p>I am a second year computer science PhD student at MIT. I am advised by Leslie Kaelbling and Josh Tenenbaum and am a member of the <a href="http://lis.csail.mit.edu/">Learning and Intelligent Systems group</a> and the <a href="http://cocosci.mit.edu/">Computational Cognitive Science group</a>. I am grateful for support from an NSF Graduate Research Fellowship and an MIT Presidential Fellowship. Previously I was a researcher at <a href="https://www.vicarious.com/">Vicarious AI</a>. I received my B.A. from Harvard in computer science and mathematics in 2016.
+              <p>I am a third year computer science PhD student at MIT. I am advised by Leslie Kaelbling and Josh Tenenbaum and am a member of the <a href="http://lis.csail.mit.edu/">Learning and Intelligent Systems group</a> and the <a href="http://cocosci.mit.edu/">Computational Cognitive Science group</a>. I am grateful for support from an NSF Graduate Research Fellowship and an MIT Presidential Fellowship. Previously I was a researcher at <a href="https://www.vicarious.com/">Vicarious AI</a>. I received my B.A. from Harvard in computer science and mathematics in 2016.
               </p>
               <p>Feel free to contact me at tslvr@mit.edu.
               </p>
@@ -107,7 +107,7 @@
             <td width="100%" valign="middle">
               <heading>Research</heading>
               <p>
-                My research uses insights from program synthesis and inductive logic programming to improve sample efficiency and generalization in reinforcement learning and planning.
+                My research uses insights from program synthesis, classical planning, reinforcement learning, and machine learning to improve sample efficiency and generalization in decision-making tasks with very long horizons and sparse rewards.
               </p>
             </td>
           </tr>
@@ -115,10 +115,58 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+        <tr>
+            <td width="25%">
+              <div class="one">
+                <div class="two"><img src='images/ploi_image.png' width="160" vspace="0"></div>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+            <a href="https://arxiv.org/abs/2009.05613">
+                <papertitle>Planning with learned object importance in large problem instances using graph neural networks</papertitle>
+            </a>
+              <br>
+              <strong>Tom Silver*</strong>, Rohan Chitnis*, Aidan Curtis, Josh Tenenbaum, Tomas Lozano-Perez, Leslie Kaelbling
+              <br>
+              <em>arXiv</em>, 2020
+              <br>
+              [<a href="bib/ploi.bib">BibTeX</a>]
+              [<a href="https://www.youtube.com/watch?v=FWsVJc2fvCE">Video</a>]
+              [<a href="https://arxiv.org/pdf/2009.05613.pdf">PDF</a>]
+              <br>
+              <p></p>
+              <p>We propose a graph neural network architecture for predicting object importance to address the challenge of planning in problems that contain many, many objects.</p>
+            </td>
+          </tr>
+
           <tr>
             <td width="25%">
               <div class="one">
-                <div class="two"><img src='images/PDDLGym_image.png' width="160" vspace="12"></div>
+                <div class="two"><img src='images/camp_image.png' width="160" vspace="4"></div>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+            <a href="https://arxiv.org/abs/2007.13202">
+                <papertitle>CAMPs: Learning context-specific abstractions for efficient planning in factored MDPs</papertitle>
+            </a>
+              <br>
+              Rohan Chitnis*, <strong>Tom Silver*</strong>, Beomjoon Kim, Leslie Kaelbling, Tomas Lozano-Perez
+              <br>
+              <em>arXiv</em>, 2020
+              <br>
+              [<a href="bib/camp.bib">BibTeX</a>]
+              [<a href="https://www.youtube.com/watch?v=wTXt6djcAd4">Video</a>]
+              [<a href="https://arxiv.org/pdf/2007.13202.pdf">PDF</a>]
+              <br>
+              <p></p>
+              <p>We observe that learning to impose constraints in factored planning problems can induce context-specific abstractions that afford much more efficient planning.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%">
+              <div class="one">
+                <div class="two"><img src='images/pddlgym_image.png' width="160" vspace="12"></div>
               </div>
             </td>
             <td valign="middle" width="75%">
@@ -128,7 +176,7 @@
               <br>
               <strong>Tom Silver</strong>, Rohan Chitnis
               <br>
-              <em>arXiv</em>, 2020
+              <em>ICAPS PRL Workshop</em>, 2020
               <br>
               [<a href="bib/pddlgym.bib">BibTeX</a>]
               [<a href="https://arxiv.org/pdf/2002.06432.pdf">PDF</a>]
@@ -146,7 +194,7 @@
             </td>
             <td valign="middle" width="75%">
             <a href="https://arxiv.org/abs/2001.08299">
-                <papertitle>GLIB: Exploration via goal-literal babbling for lifted operator learning</papertitle>
+                <papertitle>GLIB: Efficient exploration for relational model-based reinforcement learning via goal-literal babbling</papertitle>
             </a>
               <br>
               Rohan Chitnis*, <strong>Tom Silver*</strong>, Josh Tenenbaum, Leslie Kaelbling, Tomas Lozano-Perez
@@ -154,10 +202,57 @@
               <em>arXiv</em>, 2020
               <br>
               [<a href="bib/glib.bib">BibTeX</a>]
+              [<a href="https://www.youtube.com/watch?v=F6lmrPT6TOY">Video</a>]
               [<a href="https://arxiv.org/pdf/2001.08299.pdf">PDF</a>]
               <br>
               <p></p>
-              <p>We propose goal-literal babbling (GLIB), a simple and general method that addresses the problem of efficient exploration for learning lifted operators in sequential decision-making problems without extrinsic goals or rewards.</p>
+              <p>We propose goal-literal babbling (GLIB), a simple and general method that addresses the problem of efficient exploration for transition model learning in the relational model-based reinforcement learning setting without extrinsic goals or rewards.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%">
+              <div class="one">
+                <div class="two"><img src='images/iros20_image.png' width="160" vspace="36"></div>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+            <a href="https://joaoloula.github.io/Learning_Constraint_based_Planning_Models_From_Demonstrations.pdf">
+              <papertitle>Learning constraint-based planning models from demonstrations</papertitle>
+            </a>
+              <br>
+              Jo&atilde;o Loula, Kelsey Allen, <strong>Tom Silver</strong>, Josh Tenenbuam
+              <br>
+              <em>IROS</a></em>, 2020
+              <br>
+              [<a href="bib/iros20.bib">BibTeX</a>]
+              [<a href="https://joaoloula.github.io/Learning_Constraint_based_Planning_Models_From_Demonstrations.pdf">PDF</a>]
+              <br>
+              <p></p>
+              <p>We present a framework for learning constraint-based task and motion planning models using gradient descent.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%">
+              <div class="one">
+                <div class="two"><img src='images/sips_image.png' width="160" vspace="16"></div>
+              </div>
+            </td>
+            <td valign="middle" width="75%">
+            <a href="https://arxiv.org/abs/2006.07532">
+                <papertitle>Online Bayesian Goal Inference for Boundedly-Rational Planning Agents</papertitle>
+            </a>
+              <br>
+              Tan Zhi-Xuan, Jordyn L. Mann, <strong>Tom Silver</strong>, Josh Tenenbaum, Vikash K. Mansinghka
+              <br>
+              <em>arXiv</em>, 2020
+              <br>
+              [<a href="bib/sips.bib">BibTeX</a>]
+              [<a href="https://arxiv.org/pdf/2006.07532.pdf">PDF</a>]
+              <br>
+              <p></p>
+              <p>We present an architecture capable of inferring an agent's goals online from both optimal and non-optimal sequences of actions.</p>
             </td>
           </tr>
 
@@ -236,7 +331,7 @@
           <tr>
             <td width="25%">
               <div class="one">
-                <div class="two"><img src='images/icml2019_image.png' width="160" vspace="1"></div>
+                <div class="two"><img src='images/icml2019_image.png' width="160" vspace="20"></div>
               </div>
             </td>
             <td valign="middle" width="75%">
@@ -350,7 +445,7 @@
           <tr>
             <td width="25%">
               <div class="one">
-                <div class="two"><img src='images/luna_image.png' width="160" vspace="50"></div>
+                <div class="two"><img src='images/luna_image.png' width="160" vspace="40"></div>
               </div>
             </td>
             <td valign="middle" width="75%">
